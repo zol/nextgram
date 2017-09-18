@@ -4,6 +4,7 @@
   "dependencies": {
     "next": "^2.0.0-beta",
     "react": "^15.6.1",
+    "react-chromatic": "^0.3.4",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "dev": "next",
     "build": "next build",
     "start": "NODE_ENV=production next start",
-    "lint": "standard"
+    "lint": "standard",
+    "chromatic-server": "chromatic server"
   }
 }
