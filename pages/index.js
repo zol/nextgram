@@ -1,11 +1,16 @@
-import configure from 'react-chromatic/client';
+import config from '../chromatic.config';
+
+if (process.env.NODE_ENV === 'development') {
+  const configure = require(process.browser
+    ? 'react-chromatic/client'
+    : 'react-chromatic/server');
+  configure.default(config);
+}
+
 import React from 'react';
 import Router from 'next/router';
 
 import Modal from '../components/modal';
-
-import config from '../chromatic.config';
-configure(config);
 
 export default class extends React.Component {
   static getInitialProps() {
