@@ -4,6 +4,7 @@
   "dependencies": {
     "next": "^2.0.0-beta",
     "react": "^15.6.1",
+    "react-chromatic": "^0.4.5",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
