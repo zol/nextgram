@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default ({ id }) => (
+const Frame = ({ id }) => (
   <div className='photo'>
     <div className='image'>
       {id}
@@ -56,3 +56,5 @@ export default ({ id }) => (
     `}</style>
   </div>
 )
+
+export default Frame;

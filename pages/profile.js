@@ -1,11 +1,10 @@
-import React from 'react'
+import './chromatic.js';
+import React from 'react';
 
-export default ({ url: { query: { id } } }) => (
-  <div className='main'>
-    <h1 className='heading'>
-      User profile:
-      {' '}
-      <b className='username'>{id}</b>
+export default ({ url: { query: { id } } }) =>
+  <div className="main">
+    <h1 className="heading">
+      User profile: <b className="username">{id}</b>
     </h1>
     <style jsx>{`
       .main {
@@ -20,5 +19,4 @@ export default ({ url: { query: { id } } }) => (
         color: blue;
       }
     `}</style>
-  </div>
-)
+  </div>;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Photo from './frame'
 
-export default class extends React.Component {
+const Modal = class extends React.Component {
   dismiss (e) {
     if (this._shim === e.target ||
        this._photoWrap === e.target) {
@@ -39,3 +39,5 @@ export default class extends React.Component {
     )
   }
 }
+
+export default Modal;

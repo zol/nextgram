@@ -1,9 +1,10 @@
-import React from 'react'
-import Photo from '../components/frame'
+import './chromatic.js';
+import React from 'react';
+import Photo from '../components/frame';
 
-export default ({ url: { query: { id } } }) => (
-  <div className='permalink'>
-    <div className='wrap'>
+export default ({ url: { query: { id } } }) =>
+  <div className="permalink">
+    <div className="wrap">
       <Photo id={id} />
     </div>
     <style jsx>{`
@@ -18,5 +19,4 @@ export default ({ url: { query: { id } } }) => (
         margin: auto;
       }
     `}</style>
-  </div>
-)
+  </div>;
